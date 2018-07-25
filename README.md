@@ -129,21 +129,21 @@ To get started we need to consume the data from the Meetup RSVP stream, extract 
 
     The properties to add are:
     ```
-    event.name    $.event.event_name
+    event.name		$.event.event_name
 
-    event.url     $.event.event_url
+    event.url		$.event.event_url
 
-    group.city    $.group.group_city
+    group.city		$.group.group_city
 
-    group.state   $.group.group_state
+    group.state		$.group.group_state
 
     group.country	$.group.group_country
 
     group.name		$.group.group_name
 
-    venue.lat		  $.venue.lat
+    venue.lat		$.venue.lat
 
-    venue.lon     $.venue.lon
+    venue.lon		$.venue.lon
 
     venue.name		$.venue.venue_name
     ```

@@ -88,7 +88,7 @@ NOTE: The following instructions are for using Putty. You can also use other pop
 
 #### NiFi Install
 
-- NiFi is installed at: /usr/hdf/current/nifi
+- NiFi is installed at: /usr/hdp/current/nifi
 
 
 
@@ -240,7 +240,7 @@ Now we should be ready to create our flow. To do this do the following:
 8. Now SCP the template you downloaded to the ````/tmp```` directory on your EC2 instance. If you are using Windows you will need to download WinSCP (https://winscp.net/eng/download.php)
 9.  We are now ready to setup MiNiFi. However before doing that we need to convert the template to YAML format which MiNiFi uses. To do this we need to do the following:
 
-    * Navigate to the minifi-toolkit directory (/usr/hdf/current/minifi-toolkit-0.4.0)
+    * Navigate to the minifi-toolkit directory (/usr/hdp/current/minifi-toolkit-0.4.0)
     * Transform the template that we downloaded using the following command:
 
       ````sudo bin/config.sh transform <INPUT_TEMPLATE> <OUTPUT_FILE>````
@@ -328,10 +328,10 @@ bin/kafka-console-producer.sh --broker-list demo.hortonworks.com:6667 --topic fi
 ## Integrating Kafka with NiFi
 1. Creating the topic
   - Step 1: Open an SSH connection to your EC2 Node.
-  - Step 2: Naviagte to the Kafka directory (````/usr/hdf/current/kafka-broker````), this is where Kafka is installed, we will use the utilities located in the bin directory.
+  - Step 2: Naviagte to the Kafka directory (````/usr/hdp/current/kafka-broker````), this is where Kafka is installed, we will use the utilities located in the bin directory.
 
     ````
-    #cd /usr/hdf/current/kafka-broker/
+    #cd /usr/hdp/current/kafka-broker/
     ````
 
   - Step 3: Create a topic using the kafka-topics.sh script
@@ -374,10 +374,10 @@ bin/kafka-console-producer.sh --broker-list demo.hortonworks.com:6667 --topic fi
 ## Integrating the Schema Registry
 1. Creating the topic
   - Step 1: Open an SSH connection to your EC2 Node.
-  - Step 2: Naviagte to the Kafka directory (````/usr/hdf/current/kafka-broker````), this is where Kafka is installed, we will use the utilities located in the bin directory.
+  - Step 2: Naviagte to the Kafka directory (````/usr/hdp/current/kafka-broker````), this is where Kafka is installed, we will use the utilities located in the bin directory.
 
     ````
-    #cd /usr/hdf/current/kafka-broker/
+    #cd /usr/hdp/current/kafka-broker/
     ````
 
   - Step 3: Create a topic using the kafka-topics.sh script
